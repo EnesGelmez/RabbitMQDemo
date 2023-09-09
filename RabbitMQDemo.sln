@@ -3,11 +3,13 @@ Microsoft Visual Studio Solution File, Format Version 12.00
 # Visual Studio Version 17
 VisualStudioVersion = 17.5.33424.131
 MinimumVisualStudioVersion = 10.0.40219.1
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "RabbitMQSender", "RabbitMQSender\RabbitMQSender.csproj", "{59BBDC31-F569-4DE2-9556-20C4F30D070C}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "RabbitMQSender", "RabbitMQSender\RabbitMQSender.csproj", "{59BBDC31-F569-4DE2-9556-20C4F30D070C}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "RabbitMQReceiver1", "RabbitMQReceiver1\RabbitMQReceiver1.csproj", "{C6B65F65-0D9C-4F68-91BB-319077B06B9D}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "RabbitMQReceiver1", "RabbitMQReceiver1\RabbitMQReceiver1.csproj", "{C6B65F65-0D9C-4F68-91BB-319077B06B9D}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "RabbitMQReceiver2", "RabbitMQReceiver2\RabbitMQReceiver2.csproj", "{CA08D9FB-E482-4510-9DF1-326096B22A6D}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "RabbitMQReceiver2", "RabbitMQReceiver2\RabbitMQReceiver2.csproj", "{CA08D9FB-E482-4510-9DF1-326096B22A6D}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "RabbitMQWebapi", "RabbitMQWebapi\RabbitMQWebapi.csproj", "{B518796F-B14A-42ED-B3CC-CE2CD401386A}"
 EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
@@ -27,6 +29,10 @@ Global
 		{CA08D9FB-E482-4510-9DF1-326096B22A6D}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{CA08D9FB-E482-4510-9DF1-326096B22A6D}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{CA08D9FB-E482-4510-9DF1-326096B22A6D}.Release|Any CPU.Build.0 = Release|Any CPU
+		{B518796F-B14A-42ED-B3CC-CE2CD401386A}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{B518796F-B14A-42ED-B3CC-CE2CD401386A}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{B518796F-B14A-42ED-B3CC-CE2CD401386A}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{B518796F-B14A-42ED-B3CC-CE2CD401386A}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
