@@ -12,7 +12,7 @@ using RabbitMQWebapi.Models.RabbitMQ;
 namespace RabbitMQWebapi.Controllers
 {
     [ApiController]
-    [Route("[controller]")]
+    [Route("api/[controller]")]
     public class RabbitMQController : BaseController
     {
         [HttpPost]
@@ -20,10 +20,10 @@ namespace RabbitMQWebapi.Controllers
         {
             GeneralResponse<string> generalResponse = new GeneralResponse<string>();
             string uri = "amqp://guest:guest@localhost:5672";
-            string clientProvideName = "Worker ReceiverRabbitMQ";
+            string clientProvideName = "RabbitMQWebapi Management";
             string exchangeName = "DemoExchange";
-            string queueName = "DemoQueue";
-            string routingKey = "demo-routing-key";
+            string queueName = "Control_Customer_Values";
+            string routingKey = "control_customer_values";
             Decloration decloration = new Decloration(uri, clientProvideName, exchangeName, queueName, routingKey);
 
             //decloration.Model.ExchangeDeclare(exchangeName, ExchangeType.Direct);

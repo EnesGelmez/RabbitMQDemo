@@ -1,12 +1,7 @@
-using Microsoft.Extensions.DependencyInjection;
-using Microsoft.Extensions.Hosting;
-using Microsoft.Extensions.Logging;
 using RabbitMQDemo.Data;
 using RabbitMQWebapi.Models.Configurations;
 using RabbitMQWebapi.Models.RabbitMQ;
 using RabbitMQWebapi.Utilities;
-using System;
-using System.Runtime.InteropServices;
 
 namespace RabbitMQWebapi.Background;
 
@@ -38,9 +33,9 @@ public class Worker : BackgroundService
     {
         string uri = "amqp://guest:guest@localhost:5672";
         string clientProvideName = "Worker ReceiverRabbitMQ";
-        string exchangeName = "DemoExchange";
-        string queueName = "DemoQueue";
-        string routingKey = "demo-routing-key";
+        string exchangeName = "ControlCustomer";
+        string queueName = "AddCustomerMethod";
+        string routingKey = "RabbitMQDemo_Key";
         Decloration decloration = new Decloration(uri, clientProvideName, exchangeName, queueName, routingKey);
         using var scope = _serviceProvider.CreateScope();
         var services = scope.ServiceProvider;
@@ -49,22 +44,26 @@ public class Worker : BackgroundService
 
         try
         {
-            _logger?.LogInformation("Worker running at: {time}", DateTimeOffset.Now);
-            while (!stoppingToken.IsCancellationRequested)
+            if (_generalConfig.UseWorker)
             {
-                try
-                {
-                    _logger?.LogInformation($"----------------------BEGIN CYCLE {DateTimeOffset.Now}----------------------");
+                _logger?.LogInformation("Worker running at: {time}", DateTimeOffset.Now);
 
-                    //receiverRabbitMQ.ReceiveData(_generalConfig, decloration);
-
-                    _logger?.LogInformation($"-----------------------END CYCLE {DateTimeOffset.Now}-----------------------");
-                }
-                catch (Exception ex)
+                while (!stoppingToken.IsCancellationRequested)
                 {
-                    _logger.LogError("Worker->Execute", ex);
+                    try
+                    {
+                        _logger?.LogInformation($"----------------------BEGIN CYCLE {DateTimeOffset.Now}----------------------");
+
+                        receiverRabbitMQ.ReceiveData(_generalConfig, decloration);
+
+                        _logger?.LogInformation($"-----------------------END CYCLE {DateTimeOffset.Now}-----------------------");
+                    }
+                    catch (Exception ex)
+                    {
+                        _logger.LogError("Worker->Execute", ex);
+                    }
+                    await Task.Delay(_generalConfig.WorkerControlTime, stoppingToken);
                 }
-                await Task.Delay(_generalConfig.WorkerControlTime, stoppingToken);
             }
         }
         catch (Exception ex)

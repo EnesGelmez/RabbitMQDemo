@@ -16,7 +16,7 @@ namespace RabbitMQWebapi.Controllers
     public class GeneralCustomer : BaseController
     {
         [HttpPost]
-        public GeneralResponse<string> AddCustomer(Customer customer)
+        public async Task<GeneralResponse<string>> AddCustomer(Customer customer)
         {
             GeneralResponse<string> generalResponse = new GeneralResponse<string>();
             string uri = "amqp://guest:guest@localhost:5672";
@@ -33,9 +33,9 @@ namespace RabbitMQWebapi.Controllers
             Logger.LogInformation($"Sending Message");
             byte[] messageBodyBytes = Encoding.UTF8.GetBytes(JsonConvert.SerializeObject(customer));
             decloration.Model.BasicPublish(exchangeName, routingKey, basicProperties: null, messageBodyBytes);
-            Thread.Sleep(1000);
+            //Thread.Sleep(1000);
             generalResponse.Data = "İşleminiz sıraya alımıştır.";
-            return generalResponse;
+            return await Task.FromResult<GeneralResponse<string>>(generalResponse);
 
         }
     }

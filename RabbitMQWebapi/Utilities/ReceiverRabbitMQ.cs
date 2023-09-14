@@ -28,7 +28,7 @@ namespace RabbitMQWebapi.Utilities
             _decloration = decloration;
             _generalDbContext = generalDbContext;
         }
-        public async void ReceiveData(IGeneralConfig _generalConfig, Decloration decloration)
+        public void ReceiveData(IGeneralConfig _generalConfig, Decloration decloration)
         {
 
             var consumer = new EventingBasicConsumer(decloration.Model);
@@ -45,6 +45,8 @@ namespace RabbitMQWebapi.Utilities
                     await _generalDbContext.SaveChangesAsync();
                     _logger.LogInformation($"Message Received: {message}");
                     _decloration.Model.BasicAck(ea.DeliveryTag, multiple: false);
+
+
                 }
                 catch (Exception ex)
                 {

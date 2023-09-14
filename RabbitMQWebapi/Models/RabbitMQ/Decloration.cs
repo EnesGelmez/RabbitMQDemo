@@ -7,6 +7,7 @@ namespace RabbitMQWebapi.Models.RabbitMQ
     {
         public Decloration(string uri, string clientProvideName, string exchangeName, string queueName, string routingKey)
         {
+            Console.WriteLine("Decloration");
             Factory = new();
             Factory.Uri = new Uri(uri);
             Factory.ClientProvidedName = clientProvideName;

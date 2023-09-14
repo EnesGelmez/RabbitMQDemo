@@ -1,0 +1,17 @@
+D:\Projects\C#\RabbitMQDemo\RabbitMQReceiver1\bin\Debug\net7.0\RabbitMQReceiver1.exe
+D:\Projects\C#\RabbitMQDemo\RabbitMQReceiver1\bin\Debug\net7.0\RabbitMQReceiver1.deps.json
+D:\Projects\C#\RabbitMQDemo\RabbitMQReceiver1\bin\Debug\net7.0\RabbitMQReceiver1.runtimeconfig.json
+D:\Projects\C#\RabbitMQDemo\RabbitMQReceiver1\bin\Debug\net7.0\RabbitMQReceiver1.dll
+D:\Projects\C#\RabbitMQDemo\RabbitMQReceiver1\bin\Debug\net7.0\RabbitMQReceiver1.pdb
+D:\Projects\C#\RabbitMQDemo\RabbitMQReceiver1\bin\Debug\net7.0\RabbitMQ.Client.dll
+D:\Projects\C#\RabbitMQDemo\RabbitMQReceiver1\obj\Debug\net7.0\RabbitMQReceiver1.csproj.AssemblyReference.cache
+D:\Projects\C#\RabbitMQDemo\RabbitMQReceiver1\obj\Debug\net7.0\RabbitMQReceiver1.GeneratedMSBuildEditorConfig.editorconfig
+D:\Projects\C#\RabbitMQDemo\RabbitMQReceiver1\obj\Debug\net7.0\RabbitMQReceiver1.AssemblyInfoInputs.cache
+D:\Projects\C#\RabbitMQDemo\RabbitMQReceiver1\obj\Debug\net7.0\RabbitMQReceiver1.AssemblyInfo.cs
+D:\Projects\C#\RabbitMQDemo\RabbitMQReceiver1\obj\Debug\net7.0\RabbitMQReceiver1.csproj.CoreCompileInputs.cache
+D:\Projects\C#\RabbitMQDemo\RabbitMQReceiver1\obj\Debug\net7.0\RabbitMQReceiver1.csproj.CopyComplete
+D:\Projects\C#\RabbitMQDemo\RabbitMQReceiver1\obj\Debug\net7.0\RabbitMQReceiver1.dll
+D:\Projects\C#\RabbitMQDemo\RabbitMQReceiver1\obj\Debug\net7.0\refint\RabbitMQReceiver1.dll
+D:\Projects\C#\RabbitMQDemo\RabbitMQReceiver1\obj\Debug\net7.0\RabbitMQReceiver1.pdb
+D:\Projects\C#\RabbitMQDemo\RabbitMQReceiver1\obj\Debug\net7.0\RabbitMQReceiver1.genruntimeconfig.cache
+D:\Projects\C#\RabbitMQDemo\RabbitMQReceiver1\obj\Debug\net7.0\ref\RabbitMQReceiver1.dll

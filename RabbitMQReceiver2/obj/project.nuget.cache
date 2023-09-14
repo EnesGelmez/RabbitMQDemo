@@ -1,8 +1,8 @@
 {
   "version": 2,
-  "dgSpecHash": "IAzuR7FaCiXmTnAsE6Ny3YWfLokf7qi6Uemn3rauvW/otCzBmGxewlrC3V43GPff7KJxF4NSt+jBN1mf+aVWuQ==",
+  "dgSpecHash": "QT2Noo5ZOlJkuMJLfbR+tcHC4k0xM5A7foJfvVNfZIYE8aOtrcsqH6Kr3LUnFBmmi0hWvMq7JL4gOYlND2ksRg==",
   "success": true,
-  "projectFilePath": "C:\\Users\\Enesg\\source\\repos\\RabbitMQDemo\\RabbitMQReceiver2\\RabbitMQReceiver2.csproj",
+  "projectFilePath": "D:\\Projects\\C#\\RabbitMQDemo\\RabbitMQReceiver2\\RabbitMQReceiver2.csproj",
   "expectedPackageFiles": [
     "C:\\Users\\Enesg\\.nuget\\packages\\newtonsoft.json\\13.0.3\\newtonsoft.json.13.0.3.nupkg.sha512",
     "C:\\Users\\Enesg\\.nuget\\packages\\rabbitmq.client\\6.5.0\\rabbitmq.client.6.5.0.nupkg.sha512",

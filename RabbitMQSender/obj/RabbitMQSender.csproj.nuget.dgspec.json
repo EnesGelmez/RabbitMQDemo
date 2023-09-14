@@ -1,29 +1,20 @@
 {
   "format": 1,
   "restore": {
-    "C:\\Users\\Enesg\\source\\repos\\RabbitMQDemo\\RabbitMQSender\\RabbitMQSender.csproj": {}
+    "D:\\Projects\\C#\\RabbitMQDemo\\RabbitMQSender\\RabbitMQSender.csproj": {}
   },
   "projects": {
-    "C:\\Users\\Enesg\\source\\repos\\RabbitMQDemo\\RabbitMQSender\\RabbitMQSender.csproj": {
+    "D:\\Projects\\C#\\RabbitMQDemo\\RabbitMQSender\\RabbitMQSender.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "C:\\Users\\Enesg\\source\\repos\\RabbitMQDemo\\RabbitMQSender\\RabbitMQSender.csproj",
+        "projectUniqueName": "D:\\Projects\\C#\\RabbitMQDemo\\RabbitMQSender\\RabbitMQSender.csproj",
         "projectName": "RabbitMQSender",
-        "projectPath": "C:\\Users\\Enesg\\source\\repos\\RabbitMQDemo\\RabbitMQSender\\RabbitMQSender.csproj",
+        "projectPath": "D:\\Projects\\C#\\RabbitMQDemo\\RabbitMQSender\\RabbitMQSender.csproj",
         "packagesPath": "C:\\Users\\Enesg\\.nuget\\packages\\",
-        "outputPath": "C:\\Users\\Enesg\\source\\repos\\RabbitMQDemo\\RabbitMQSender\\obj\\",
+        "outputPath": "D:\\Projects\\C#\\RabbitMQDemo\\RabbitMQSender\\obj\\",
         "projectStyle": "PackageReference",
-        "fallbackFolders": [
-          "E:\\Program Files\\DevExpress 21.2\\Components\\Offline Packages",
-          "E:\\Program Files\\DevExpress 22.1\\Components\\Offline Packages",
-          "E:\\Program Files\\DevExpress 22.2\\Components\\Offline Packages"
-        ],
         "configFilePaths": [
           "C:\\Users\\Enesg\\AppData\\Roaming\\NuGet\\NuGet.Config",
-          "C:\\Program Files (x86)\\NuGet\\Config\\DevExpress 20.1.config",
-          "C:\\Program Files (x86)\\NuGet\\Config\\DevExpress 21.2.config",
-          "C:\\Program Files (x86)\\NuGet\\Config\\DevExpress 22.1.config",
-          "C:\\Program Files (x86)\\NuGet\\Config\\DevExpress 22.2.config",
           "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.Offline.config"
         ],
         "originalTargetFrameworks": [
@@ -31,16 +22,16 @@
         ],
         "sources": {
           "C:\\Program Files (x86)\\Microsoft SDKs\\NuGetPackages\\": {},
-          "E:\\Program Files\\DevExpress 20.1.4\\Components\\System\\Components\\Packages": {},
-          "E:\\Program Files\\DevExpress 21.2\\Components\\System\\Components\\Packages": {},
-          "E:\\Program Files\\DevExpress 22.1\\Components\\System\\Components\\Packages": {},
-          "E:\\Program Files\\DevExpress 22.2\\Components\\System\\Components\\Packages": {},
           "https://api.nuget.org/v3/index.json": {}
         },
         "frameworks": {
           "net7.0": {
             "targetAlias": "net7.0",
-            "projectReferences": {}
+            "projectReferences": {
+              "D:\\Projects\\C#\\RabbitMQDemo\\RabbitMQWebapi\\RabbitMQWebapi.csproj": {
+                "projectPath": "D:\\Projects\\C#\\RabbitMQDemo\\RabbitMQWebapi\\RabbitMQWebapi.csproj"
+              }
+            }
           }
         },
         "warningProperties": {
@@ -74,6 +65,96 @@
           "assetTargetFallback": true,
           "warn": true,
           "frameworkReferences": {
+            "Microsoft.NETCore.App": {
+              "privateAssets": "all"
+            }
+          },
+          "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\7.0.400\\RuntimeIdentifierGraph.json"
+        }
+      }
+    },
+    "D:\\Projects\\C#\\RabbitMQDemo\\RabbitMQWebapi\\RabbitMQWebapi.csproj": {
+      "version": "1.0.0",
+      "restore": {
+        "projectUniqueName": "D:\\Projects\\C#\\RabbitMQDemo\\RabbitMQWebapi\\RabbitMQWebapi.csproj",
+        "projectName": "RabbitMQWebapi",
+        "projectPath": "D:\\Projects\\C#\\RabbitMQDemo\\RabbitMQWebapi\\RabbitMQWebapi.csproj",
+        "packagesPath": "C:\\Users\\Enesg\\.nuget\\packages\\",
+        "outputPath": "D:\\Projects\\C#\\RabbitMQDemo\\RabbitMQWebapi\\obj\\",
+        "projectStyle": "PackageReference",
+        "configFilePaths": [
+          "C:\\Users\\Enesg\\AppData\\Roaming\\NuGet\\NuGet.Config",
+          "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.Offline.config"
+        ],
+        "originalTargetFrameworks": [
+          "net7.0"
+        ],
+        "sources": {
+          "C:\\Program Files (x86)\\Microsoft SDKs\\NuGetPackages\\": {},
+          "https://api.nuget.org/v3/index.json": {}
+        },
+        "frameworks": {
+          "net7.0": {
+            "targetAlias": "net7.0",
+            "projectReferences": {}
+          }
+        },
+        "warningProperties": {
+          "warnAsError": [
+            "NU1605"
+          ]
+        }
+      },
+      "frameworks": {
+        "net7.0": {
+          "targetAlias": "net7.0",
+          "dependencies": {
+            "Microsoft.AspNetCore.OpenApi": {
+              "target": "Package",
+              "version": "[7.0.3, )"
+            },
+            "Microsoft.EntityFrameworkCore": {
+              "target": "Package",
+              "version": "[7.0.9, )"
+            },
+            "Microsoft.EntityFrameworkCore.SqlServer": {
+              "target": "Package",
+              "version": "[7.0.9, )"
+            },
+            "Microsoft.EntityFrameworkCore.Tools": {
+              "include": "Runtime, Build, Native, ContentFiles, Analyzers, BuildTransitive",
+              "suppressParent": "All",
+              "target": "Package",
+              "version": "[7.0.9, )"
+            },
+            "Newtonsoft.Json": {
+              "target": "Package",
+              "version": "[13.0.3, )"
+            },
+            "RabbitMQ.Client": {
+              "target": "Package",
+              "version": "[6.5.0, )"
+            },
+            "Swashbuckle.AspNetCore": {
+              "target": "Package",
+              "version": "[6.4.0, )"
+            }
+          },
+          "imports": [
+            "net461",
+            "net462",
+            "net47",
+            "net471",
+            "net472",
+            "net48",
+            "net481"
+          ],
+          "assetTargetFallback": true,
+          "warn": true,
+          "frameworkReferences": {
+            "Microsoft.AspNetCore.App": {
+              "privateAssets": "none"
+            },
             "Microsoft.NETCore.App": {
               "privateAssets": "all"
             }

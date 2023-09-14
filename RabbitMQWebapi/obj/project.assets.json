@@ -4034,31 +4034,19 @@
     ]
   },
   "packageFolders": {
-    "C:\\Users\\Enesg\\.nuget\\packages\\": {},
-    "E:\\Program Files\\DevExpress 21.2\\Components\\Offline Packages": {},
-    "E:\\Program Files\\DevExpress 22.1\\Components\\Offline Packages": {},
-    "E:\\Program Files\\DevExpress 22.2\\Components\\Offline Packages": {}
+    "C:\\Users\\Enesg\\.nuget\\packages\\": {}
   },
   "project": {
     "version": "1.0.0",
     "restore": {
-      "projectUniqueName": "C:\\Users\\Enesg\\source\\repos\\RabbitMQDemo\\RabbitMQWebapi\\RabbitMQWebapi.csproj",
+      "projectUniqueName": "D:\\Projects\\C#\\RabbitMQDemo\\RabbitMQWebapi\\RabbitMQWebapi.csproj",
       "projectName": "RabbitMQWebapi",
-      "projectPath": "C:\\Users\\Enesg\\source\\repos\\RabbitMQDemo\\RabbitMQWebapi\\RabbitMQWebapi.csproj",
+      "projectPath": "D:\\Projects\\C#\\RabbitMQDemo\\RabbitMQWebapi\\RabbitMQWebapi.csproj",
       "packagesPath": "C:\\Users\\Enesg\\.nuget\\packages\\",
-      "outputPath": "C:\\Users\\Enesg\\source\\repos\\RabbitMQDemo\\RabbitMQWebapi\\obj\\",
+      "outputPath": "D:\\Projects\\C#\\RabbitMQDemo\\RabbitMQWebapi\\obj\\",
       "projectStyle": "PackageReference",
-      "fallbackFolders": [
-        "E:\\Program Files\\DevExpress 21.2\\Components\\Offline Packages",
-        "E:\\Program Files\\DevExpress 22.1\\Components\\Offline Packages",
-        "E:\\Program Files\\DevExpress 22.2\\Components\\Offline Packages"
-      ],
       "configFilePaths": [
         "C:\\Users\\Enesg\\AppData\\Roaming\\NuGet\\NuGet.Config",
-        "C:\\Program Files (x86)\\NuGet\\Config\\DevExpress 20.1.config",
-        "C:\\Program Files (x86)\\NuGet\\Config\\DevExpress 21.2.config",
-        "C:\\Program Files (x86)\\NuGet\\Config\\DevExpress 22.1.config",
-        "C:\\Program Files (x86)\\NuGet\\Config\\DevExpress 22.2.config",
         "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.Offline.config"
       ],
       "originalTargetFrameworks": [
@@ -4066,10 +4054,6 @@
       ],
       "sources": {
         "C:\\Program Files (x86)\\Microsoft SDKs\\NuGetPackages\\": {},
-        "E:\\Program Files\\DevExpress 20.1.4\\Components\\System\\Components\\Packages": {},
-        "E:\\Program Files\\DevExpress 21.2\\Components\\System\\Components\\Packages": {},
-        "E:\\Program Files\\DevExpress 22.1\\Components\\System\\Components\\Packages": {},
-        "E:\\Program Files\\DevExpress 22.2\\Components\\System\\Components\\Packages": {},
         "https://api.nuget.org/v3/index.json": {}
       },
       "frameworks": {

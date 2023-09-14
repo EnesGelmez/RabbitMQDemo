@@ -14,7 +14,7 @@ namespace RabbitMQDemo.Data
         public DbContextOptions<DbContext> GetAllOptions()
         {
             DbContextOptionsBuilder<DbContext> optionsBuilder = new DbContextOptionsBuilder<DbContext>();
-            optionsBuilder.UseSqlServer("Data Source=LEGION;Initial Catalog=RabbitMQ;User Id=sa;Password=sas");
+            optionsBuilder.UseSqlServer("Data Source=ENES;Initial Catalog=RabbitMQ;User Id=sa;Password=sas");
 
             return optionsBuilder.Options;
         }

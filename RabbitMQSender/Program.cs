@@ -32,16 +32,35 @@
 
 
 
+using Microsoft.Extensions.Logging;
+using Newtonsoft.Json;
 using RabbitMQ.Client;
+using RabbitMQWebapi.Models.ControllerModels;
+using RabbitMQWebapi.Models.RabbitMQ;
+using RabbitMQWebapi.Models.ResponseModels;
 using RestSharp;
+using System.Text;
+
 internal class Program
 {
 
     private static void Main(string[] args)
     {
-        Console.Out.WriteLineAsync("test");
-        test();
-        Task.Run(() => test());
+        //Console.Out.WriteLineAsync("test");
+    
+
+        Customer customer = new Customer
+        {
+            Mail = "enes.gelmez@hotmail.com",
+            Name = "Enes",
+            Surname = "Gelmez",
+        };
+        //test2(customer);
+        while (true)
+        {
+            //test2(customer);
+        }
+
         //while (true)
         //{
         //    Console.Out.WriteLineAsync("test");
@@ -90,5 +109,28 @@ internal class Program
         //    RestResponse response = await client.ExecuteAsync(request);
         //    Console.WriteLine(response.Content);
         //};
+    }
+
+    public static async void test2(Customer customer)
+    {
+        GeneralResponse<string> generalResponse = new GeneralResponse<string>();
+        string uri = "amqp://guest:guest@localhost:5672";
+        string clientProvideName = "Worker ReceiverRabbitMQ";
+        string exchangeName = "AddCustomer";
+        string queueName = "AddCustomerMethod";
+        string routingKey = "RabbitMQDemo_Key";
+        Decloration decloration = new Decloration(uri, clientProvideName, exchangeName, queueName, routingKey);
+
+        //decloration.Model.ExchangeDeclare(exchangeName, ExchangeType.Direct);
+        //decloration.Model.QueueDeclare(queueName, durable: false, exclusive: false, autoDelete: false, arguments: null);
+        //decloration.Model.QueueBind(queueName, exchangeName, routingKey, arguments: null);
+
+        await Console.Out.WriteLineAsync($"Sending Message");
+        byte[] messageBodyBytes = Encoding.UTF8.GetBytes(JsonConvert.SerializeObject(customer));
+        decloration.Model.BasicPublish(exchangeName, routingKey, basicProperties: null, messageBodyBytes);
+        //Thread.Sleep(1000);
+        generalResponse.Data = "İşleminiz sıraya alımıştır.";
+        await Console.Out.WriteLineAsync("İşleminiz sıraya alımıştır.");
+        //return await Task.FromResult<GeneralResponse<string>>(generalResponse);
     }
 }

@@ -1,8 +1,8 @@
 {
   "version": 2,
-  "dgSpecHash": "mnOgj+423/GPR85OQ+tbyAPnWK66T9IiLiJxZqviVv3I2uBX+OAuwQ/YV70vv6+mc9z1T4ICWp9bOANS4OGkBA==",
+  "dgSpecHash": "D+aSSUyJm8S87CKdPWz80ixQZmQ1rcKZBYVj2LeC9zMFeW8mwynKGc4TBykZao/AcaBbVbVa86+wauMQL9Bxog==",
   "success": true,
-  "projectFilePath": "C:\\Users\\Enesg\\source\\repos\\RabbitMQDemo\\RabbitMQWebapi\\RabbitMQWebapi.csproj",
+  "projectFilePath": "D:\\Projects\\C#\\RabbitMQDemo\\RabbitMQWebapi\\RabbitMQWebapi.csproj",
   "expectedPackageFiles": [
     "C:\\Users\\Enesg\\.nuget\\packages\\azure.core\\1.24.0\\azure.core.1.24.0.nupkg.sha512",
     "C:\\Users\\Enesg\\.nuget\\packages\\azure.identity\\1.6.0\\azure.identity.1.6.0.nupkg.sha512",

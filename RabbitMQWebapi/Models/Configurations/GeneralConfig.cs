@@ -26,6 +26,11 @@
             set { _workerControlTime = value; }
         }
 
-
+        private bool _useWorker;
+        public bool UseWorker
+        {
+            get { return _useWorker; }
+            set { _useWorker = value; }
+        }
     }
 }
